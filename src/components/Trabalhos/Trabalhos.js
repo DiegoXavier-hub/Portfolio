@@ -12,22 +12,22 @@ function Trabalhos(){
     function backgroundAnim(param) {
         switch (parseInt(param)) {
             case 1:
-                trabalhos.style.backgroundImage = "url('https://emdiabetes.com.br/wp-content/uploads/2017/09/breve.jpg')"
+                trabalhos.style.backgroundImage = "url('https://raw.githubusercontent.com/DiegoXavier-hub/images-portfolio/master/tech-1-min.jpg?token=GHSAT0AAAAAABWM6ZBJVBNPUWCAUYPV33PAYXWY7VQ')"
                 break;
             case 2: 
-                trabalhos.style.backgroundImage = "url('http://www.petdoctor.com.br/wp-content/uploads/2021/04/10RacasDeCaesMaisPopularesNoBrasil-Topo-Abr21.jpg')"
+                trabalhos.style.backgroundImage = "url('https://raw.githubusercontent.com/DiegoXavier-hub/images-portfolio/master/tech-2-min.jpg?token=GHSAT0AAAAAABWM6ZBJYWAAAAD4AP72T3AQYXWZAXA')"
                 break;
             case 3:
-                trabalhos.style.backgroundImage = "url('https://uploads.metropoles.com/wp-content/uploads/2022/05/02141436/conheca_as_racas_de_cachorros_mais_inteligentes_widexl-600x400.jpg')"
+                trabalhos.style.backgroundImage = "url('https://raw.githubusercontent.com/DiegoXavier-hub/images-portfolio/master/tech-3-min.jpg?token=GHSAT0AAAAAABWM6ZBIGN64YTI6OZWZJA26YXWZA2A')"
                 break;
             case 4:
-                trabalhos.style.backgroundImage = "url('https://www.petz.com.br/blog/wp-content/uploads/2020/07/raca-de-cachorro-muito-popular-no-brasil-3.jpg')"
+                trabalhos.style.backgroundImage = "url('https://raw.githubusercontent.com/DiegoXavier-hub/images-portfolio/master/tech-4-min.jpg?token=GHSAT0AAAAAABWM6ZBJVXWDFXB7VNUFXPNUYXWZBGA')"
                 break;
             case 5: 
-                trabalhos.style.backgroundImage = "url('https://conteudo.imguol.com.br/c/entretenimento/eb/2022/03/23/cachorro-da-raca-lulu-da-pomeramia-1648065976007_v2_900x506.jpg')"
+                trabalhos.style.backgroundImage = "url('https://raw.githubusercontent.com/DiegoXavier-hub/images-portfolio/master/tech-5-min.jpg?token=GHSAT0AAAAAABWM6ZBIL5S5QQQQBIDTKDMCYXWZBJA')"
                 break;
             case 6:
-                trabalhos.style.backgroundImage = "url('https://s2.glbimg.com/_bDnKvOpodO6FkZL8zJ0BFDtyAA=/e.glbimg.com/og/ed/f/original/2020/10/30/jamie-street-utre5dcgeyg-unsplash.jpg')"
+                trabalhos.style.backgroundImage = "url('https://raw.githubusercontent.com/DiegoXavier-hub/images-portfolio/master/tech-6-min.jpg?token=GHSAT0AAAAAABWM6ZBIV4ZJIIDSIIEQNIKSYXWZBLQ')"
                 break;
             default:
                 break;

@@ -1,7 +1,7 @@
 let Elementos = document.getElementsByClassName('Tech')
 
 function AnimeScroll(){
-    let windowTop = window.pageYOffset + ((window.innerHeight * 3) / 3.7)
+    let windowTop = window.pageYOffset + ((window.innerHeight * 3) / 3.5)
 
     try{
         for(let i=0; i<=Elementos.length; i++){
