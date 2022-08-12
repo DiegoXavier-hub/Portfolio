@@ -1,8 +1,8 @@
 #Trabalhos{
     width: 100%;
     height: 100vh;
-    background: url('https://raw.githubusercontent.com/DiegoXavier-hub/images-portfolio/master/tech-1-min.jpg?token=GHSAT0AAAAAABWM6ZBJVBNPUWCAUYPV33PAYXWY7VQ') #1d1d1d;
-    background-size: cover;
+    background: url('../../images/tech-1-min.jpg') #1d1d1d;
+    background-size: cover !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,4 +39,28 @@
 
 #Trabalhos .work:hover{
     width: 40%;
+}
+
+.b1{
+    background: url('../../images/tech-1-min.jpg') #1d1d1d !important;
+}
+
+.b2{
+    background: url('../../images/tech-2-min.jpg') #1d1d1d !important;
+}
+
+.b3{
+    background: url('../../images/tech-3-min.jpg') #1d1d1d !important;
+}
+
+.b4{
+    background: url('../../images/tech-4-min.jpg') #1d1d1d !important;
+}
+
+.b5{
+    background: url('../../images/tech-5-min.jpg') #1d1d1d !important;
+}
+
+.b6{
+    background: url('../../images/tech-6-min.jpg') #1d1d1d !important;
 }

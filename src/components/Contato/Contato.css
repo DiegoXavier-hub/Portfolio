@@ -97,12 +97,15 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 #Contato #formulario form button:hover{
     background-color: #ff0043;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);  
     transform: scale(1.03);
 }
 
 #Contato #image{
-    height: 120%;
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 100%;
     background: #1d1d1d url("../../images/back--contato.jpg") no-repeat;
     background-size: 300%;
     display: flex;

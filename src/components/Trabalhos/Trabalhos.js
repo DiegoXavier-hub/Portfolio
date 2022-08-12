@@ -12,22 +12,52 @@ function Trabalhos(){
     function backgroundAnim(param) {
         switch (parseInt(param)) {
             case 1:
-                trabalhos.style.backgroundImage = "url('https://raw.githubusercontent.com/DiegoXavier-hub/images-portfolio/master/tech-1-min.jpg?token=GHSAT0AAAAAABWM6ZBJVBNPUWCAUYPV33PAYXWY7VQ')"
+                trabalhos.classList.remove('b2')
+                trabalhos.classList.remove('b3')
+                trabalhos.classList.remove('b4')
+                trabalhos.classList.remove('b5')
+                trabalhos.classList.remove('b6')
+                trabalhos.classList.add('b1')
                 break;
             case 2: 
-                trabalhos.style.backgroundImage = "url('https://raw.githubusercontent.com/DiegoXavier-hub/images-portfolio/master/tech-2-min.jpg?token=GHSAT0AAAAAABWM6ZBJYWAAAAD4AP72T3AQYXWZAXA')"
+                trabalhos.classList.remove('b1')
+                trabalhos.classList.remove('b3')
+                trabalhos.classList.remove('b4')
+                trabalhos.classList.remove('b5')
+                trabalhos.classList.remove('b6')
+                trabalhos.classList.add('b2')
                 break;
             case 3:
-                trabalhos.style.backgroundImage = "url('https://raw.githubusercontent.com/DiegoXavier-hub/images-portfolio/master/tech-3-min.jpg?token=GHSAT0AAAAAABWM6ZBIGN64YTI6OZWZJA26YXWZA2A')"
+                trabalhos.classList.remove('b1')
+                trabalhos.classList.remove('b2')
+                trabalhos.classList.remove('b4')
+                trabalhos.classList.remove('b5')
+                trabalhos.classList.remove('b6')
+                trabalhos.classList.add('b3')
                 break;
             case 4:
-                trabalhos.style.backgroundImage = "url('https://raw.githubusercontent.com/DiegoXavier-hub/images-portfolio/master/tech-4-min.jpg?token=GHSAT0AAAAAABWM6ZBJVXWDFXB7VNUFXPNUYXWZBGA')"
+                trabalhos.classList.remove('b1')
+                trabalhos.classList.remove('b2')
+                trabalhos.classList.remove('b3')
+                trabalhos.classList.remove('b5')
+                trabalhos.classList.remove('b6')
+                trabalhos.classList.add('b4')
                 break;
             case 5: 
-                trabalhos.style.backgroundImage = "url('https://raw.githubusercontent.com/DiegoXavier-hub/images-portfolio/master/tech-5-min.jpg?token=GHSAT0AAAAAABWM6ZBIL5S5QQQQBIDTKDMCYXWZBJA')"
+                trabalhos.classList.remove('b1')
+                trabalhos.classList.remove('b2')
+                trabalhos.classList.remove('b3')
+                trabalhos.classList.remove('b4')
+                trabalhos.classList.remove('b6')
+                trabalhos.classList.add('b5')
                 break;
             case 6:
-                trabalhos.style.backgroundImage = "url('https://raw.githubusercontent.com/DiegoXavier-hub/images-portfolio/master/tech-6-min.jpg?token=GHSAT0AAAAAABWM6ZBIV4ZJIIDSIIEQNIKSYXWZBLQ')"
+                trabalhos.classList.remove('b1')
+                trabalhos.classList.remove('b2')
+                trabalhos.classList.remove('b3')
+                trabalhos.classList.remove('b4')
+                trabalhos.classList.remove('b5')
+                trabalhos.classList.add('b6')
                 break;
             default:
                 break;
