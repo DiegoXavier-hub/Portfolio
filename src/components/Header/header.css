@@ -39,6 +39,8 @@ header{
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    background-color: #171717;
+    z-index: 10;
 }
 
 .menu ul{

@@ -1,8 +1,5 @@
 #Tecnologias{
-    position: absolute;
-    top: 100vh;
-    right: 0;
-    width: 88%;
+    width: 100%;
     height: auto;
     background-color: #1d1d1d;
     display: flex;
@@ -10,6 +7,7 @@
     align-items: flex-start;
     justify-content: center;
     padding-bottom: 50px;
+    margin-top: 10%;
 }
 
 #Tecnologias section{
@@ -58,7 +56,7 @@ h1{
     background-image: url('../../images/Gradients-1.jpg');
 }
 
-#Tecnologias section:nth-child(1) .Tech:nth-child(1):hover svg{
+#Tecnologias section:nth-child(1) .Tech:hover svg{
     fill: #2760E5;
     margin-left: 28%;
 }

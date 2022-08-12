@@ -1,0 +1,42 @@
+#Trabalhos{
+    width: 100%;
+    height: 100vh;
+    background: url('https://emdiabetes.com.br/wp-content/uploads/2017/09/breve.jpg') #1d1d1d;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 10%;
+    transition: all 0.2s ease-in-out !important;
+    filter: brightness(0.5);
+}
+
+#Trabalhos div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#Trabalhos .work{
+    margin-right: 0 -1px;
+    width: 34%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid #999999;
+    border-collapse: collapse;
+    transition: all 0.3s ease;
+    border-right: 0px;
+}
+
+#Trabalhos div:nth-child(2) .work{
+    border-top: none;
+}
+
+#Trabalhos .work:hover{
+    width: 40%;
+}

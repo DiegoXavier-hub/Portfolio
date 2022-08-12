@@ -1,6 +1,8 @@
 import Header from './components/Header/Header'
 import Home from './components/Home/Home'
 import Tecnologias from './components/Tecnologias/Tecnologias'
+import Trabalhos from './components/Trabalhos/Trabalhos'
+import Contato  from './components/Contato/Contato'
 
 function App() {
   const code = "</>"
@@ -12,6 +14,8 @@ function App() {
       <Header/>
       <Home/>
       <Tecnologias/>
+      <Trabalhos/>
+      <Contato/>
     </div>
   );
 }

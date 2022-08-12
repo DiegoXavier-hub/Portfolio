@@ -12,7 +12,7 @@ function Home(){
             <span className="code-tags">{tags[4]}</span>
             <p>Desenvolvedor Front-end</p>
             <span className="code-tags">{tags[5]}</span><br/>
-            <a href="https://api.whatsapp.com/send/?phone=5537999146170&text&app_absent=0">Contate me!</a>
+            <a href="#Contato">Contate me!</a>
         </section>
     )
 }

@@ -1,0 +1,134 @@
+#Contato{
+    width: 100%;
+    height: 100vh;
+    background-color: #1d1d1d;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+#Contato section{
+    width: 50%;
+    height: 100%;
+}
+
+#Contato #formulario{
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Contato #formulario form{
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#Contato #formulario form label{
+    margin: 5% 0 3px 0;
+}
+
+#Contato #formulario form input{
+    height: 30px;
+    width: 70%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #424242;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: #d2d2d2;
+    padding-left: 5px;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus{
+    box-shadow: none;
+    -webkit-box-shadow: 0 0 0px 1000px #1d1d1d inset;
+    border-bottom: 1px solid #424242;
+}
+
+#Contato #formulario form input:-webkit-autofill{
+    -webkit-text-fill-color:#d2d2d2 !important;
+}
+
+#Contato #formulario form input::selection{
+    background-color: #ff00448c;
+    color: rgb(0, 0, 0);
+}
+
+#Contato #formulario form textarea{
+    height: 80px;
+    width: 100%;
+    background-color: #424242;
+    border: none;
+    border-bottom: 1px solid #424242;
+    color: #d2d2d2;
+    border-radius: 5px;
+}
+
+#Contato #formulario form textarea::selection{
+    background-color: #ff00448c;
+    color: rgb(0, 0, 0);
+}
+
+#Contato #formulario form button{
+    width: 220px;
+    height: 40px;
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid #ff0043;
+    color: #ff0043;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 25px 0 0 3px;
+    text-align: center;
+    line-height: 1.8rem;
+    font-size: 1.6rem;
+    transition: all 0.2s ease-in-out;
+}
+
+#Contato #formulario form button:hover{
+    background-color: #ff0043;
+    color: rgb(255, 255, 255);
+    transform: scale(1.03);
+}
+
+#Contato #image{
+    height: 120%;
+    background: #1d1d1d url("../../images/back--contato.jpg") no-repeat;
+    background-size: 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contato #image span{
+    width: 80%;
+    height: 40%;
+    background: #1d1d1d url("../../images/back--contato.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 7rem !important;
+}
+
+#Contato #image span h1:nth-child(1){
+    margin-top: -5.2rem;
+    font-size: 5rem !important;
+    align-self: flex-end;
+}
+
+#Contato #image span h1:nth-child(2){
+    margin-bottom: -5.3rem;
+    font-size: 5rem !important;
+}

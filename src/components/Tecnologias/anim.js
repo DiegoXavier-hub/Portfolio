@@ -1,13 +1,14 @@
 let Elementos = document.getElementsByClassName('Tech')
 
 function AnimeScroll(){
-    let windowTop = window.pageYOffset - 100
+    let windowTop = window.pageYOffset + ((window.innerHeight * 3) / 3.7)
+
     try{
         for(let i=0; i<=Elementos.length; i++){
             if(windowTop >= Elementos[i].offsetTop){
                 Elementos[i].classList.add('Tech--animation')
             }
-            if (window.pageYOffset+1<Elementos[i].offsetTop){
+            if (windowTop < Elementos[i].offsetTop - (window.innerHeight - 500)){
                 Elementos[i].classList.remove('Tech--animation')
             }
         }
