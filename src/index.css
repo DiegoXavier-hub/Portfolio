@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Grape+Nuts&display=swap');
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+*::selection{
+    background-color: #ff0043;
+    color: rgb(0, 0, 0);
+}
+
+body{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2.2rem;
+    background-color: #171717;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.main{
+    z-index: -1;
+}
+
+.wall{
+    position: fixed;
+    width: 100%;
+    height: 33.3333%;
+    background-color: #c60035;
+    z-index: 10;
+    transform-origin: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9rem;
+    font-weight: bolder;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wall:nth-child(1){
+    animation: wall 1s ease-in-out 0.0s forwards;
+    top: 0;
+    right: 0;
+}
+.wall:nth-child(2){
+    animation: wall 1s ease-in-out 0.3s forwards;
+    top: 33.3333%;
+    right: 0;
+}
+.wall:nth-child(3){
+    animation: wall 1s ease-in-out 0.6s forwards;
+    top: 66.6666%;
+    right: 0;
+}
+
+/*Scrollbar*/
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #ff0043;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #000;
+    border-radius: 30px;
+}
+
+/*Keyframes*/
+
+@keyframes wall {
+    0%{
+        right: 0;
+    }
+    100%{
+        right: -100%;
+    }
 }

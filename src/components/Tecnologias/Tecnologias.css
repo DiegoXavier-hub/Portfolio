@@ -1,0 +1,134 @@
+#Tecnologias{
+    position: absolute;
+    top: 100vh;
+    right: 0;
+    width: 88%;
+    height: auto;
+    background-color: #1d1d1d;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+#Tecnologias section{
+    height: auto;
+    width: auto;
+}
+
+#Tecnologias section:nth-child(1){
+    margin-right: 80px;
+    margin-top: 150px;
+}
+
+#Tecnologias .Tech{
+    margin-top: 80px;
+    height: 350px;
+    width: 210px;
+    background: #ff0043 no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #000;
+    transform: scale(0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px 10px 15px 10px;
+    font-size: 1.6rem;
+}
+
+#Tecnologias .Tech svg{
+    transition: all 0.2s ease;
+}
+
+h1{
+    font-size: 3rem;
+    text-shadow: -3px 0 #ff0043;
+}
+
+.Tech--animation{
+    animation: Techs-animation 1s 0s ease-in-out forwards;
+}
+
+/*Seleção individual de cada Tech*/
+
+#Tecnologias section:nth-child(1) .Tech:nth-child(1){
+    background-image: url('../../images/Gradients-1.jpg');
+}
+
+#Tecnologias section:nth-child(1) .Tech:nth-child(1):hover svg{
+    fill: #2760E5;
+    margin-left: 28%;
+}
+
+#Tecnologias section:nth-child(1) .Tech:nth-child(2){
+    background-image: url('../../images/Gradients-2.jpg');
+}
+
+#Tecnologias section:nth-child(1) .Tech:nth-child(2):hover svg{
+    fill: #53C1DE;
+    margin-left: 28%;
+}
+
+#Tecnologias section:nth-child(1) .Tech:nth-child(3){
+    background-image: url('../../images/Gradients-3.jpg');
+}
+
+#Tecnologias section:nth-child(1) .Tech:nth-child(3) img{
+    transform: scale(0.23);
+    position: absolute;
+    top: -180px;
+    left: -195px;
+    filter: brightness(100);
+    transition: all 0.2s;
+}
+
+#Tecnologias section:nth-child(1) .Tech:nth-child(3):hover img{
+    filter: brightness(1);
+    left: -130px;
+}
+
+#Tecnologias section:nth-child(1) .Tech:nth-child(3) div{
+    position: relative;
+    top: 125px;
+}
+
+#Tecnologias section:nth-child(2) .Tech:nth-child(1){
+    background-image: url('../../images/Gradients-4.jpg');
+    padding-top: 12px;
+}
+
+#Tecnologias section:nth-child(2) .Tech:nth-child(1):hover svg{
+    fill: #E56027;
+    margin-left: 32%;
+}
+
+#Tecnologias section:nth-child(2) .Tech:nth-child(2){
+    background-image: url('../../images/Gradients-5.jpg');
+    padding-top: 12px;
+}
+
+#Tecnologias section:nth-child(2) .Tech:nth-child(2):hover svg{
+    fill: #EAD41C;
+    margin-left: 30%;
+}
+
+#Tecnologias section:nth-child(2) .Tech:nth-child(3){
+    background-image: url('../../images/Gradients-6.jpg');
+}
+
+#Tecnologias section:nth-child(2) .Tech:nth-child(3):hover svg{
+    fill: #C36291;
+    margin-left: 30%;
+}
+
+@keyframes Techs-animation {
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1)
+    }
+}

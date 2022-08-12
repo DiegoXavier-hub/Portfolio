@@ -1,0 +1,75 @@
+#Home{
+    width: 88%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5% 0 0 4%;
+    background: -moz-linear-gradient(0deg, rgba(29,29,29,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(29,29,29,1) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(0deg, rgba(29,29,29,1) 0%, rgba(0,0,0,1) 100%);
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+#Home .code-tags{
+    font-size: 2rem;
+    text-transform: lowercase;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Grape Nuts', cursive;
+    color: #4c4c4c;
+    text-shadow: none;
+}
+
+#Home span:nth-child(1){
+    margin-top: -10%;
+}
+
+#Home span:nth-child(3){
+    margin-left: 25px;
+}
+
+#Home span:nth-child(5){
+    margin-left: 50px;
+}
+
+#Home h1{
+    font-size: 6rem;
+    margin-left: 70px;
+    text-shadow: -5px 0px #ff0043;
+}
+
+#Home h1::selection{
+    text-shadow: -2px 0px #000;
+}
+
+#Home p{
+    color: #727272;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+#Home a{
+    width: 220px;
+    height: 40px;
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid #ff0043;
+    color: #ff0043;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 0 15px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.2s ease-in-out;
+}
+
+#Home a:hover{
+    background-color: #ff0043;
+    color: rgb(255, 255, 255);
+    transform: scale(1.03);
+}
