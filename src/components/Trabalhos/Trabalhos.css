@@ -41,6 +41,10 @@
     width: 40%;
 }
 
+.badInput{
+    border: 1px solid red !important;
+}
+
 .b1{
     background: url('../../images/tech-1-min.jpg') #1d1d1d !important;
 }
