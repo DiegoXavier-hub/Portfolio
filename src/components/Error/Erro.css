@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap');
+
+#error{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #1d1d1d url('../../images/error-404.jpg') no-repeat top center;
+    background-size: cover;
+}
+
+#error h1{
+    color: #1d1d1d;
+    text-shadow: none;
+}
+
+#error h1:nth-child(2){
+    font-size: 8.6em;
+    padding: 0px;
+    margin-top: -2%;
+    text-shadow: -2px -2px #ff0043;
+    animation: glitch 0.2s infinite alternate;
+}   
+#error h1:nth-child(3){
+    margin-top: -3%;
+}   
+
+#error a{
+    width: 220px;
+    height: 40px;
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid #ff0043;
+    color: #ff0043;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 25px 0 0 3px;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+#error a:hover{
+    background-color: #ff0043;
+    color: rgb(255, 255, 255);  
+    transform: scale(1.03);
+}
+
+@keyframes glitch {
+    0%{
+        text-shadow: -2px -2px #ff0043;
+    }
+    100%{
+        text-shadow: 2px -2px blue;
+    }
+}

@@ -11,7 +11,7 @@ function Tecnologias(){
                     <div>
                         <h1>CSS3</h1>
                         <br/>
-                        <p>CSS3 conta com efeitos de transição, imagem, imagem de fundo/background</p>
+                        <p>CSS3 conta com efeitos de transição, imagem, imagem de fundo/background e estilizações únicas para web</p>
                     </div>
                 </div>
                 <div className="Tech">
@@ -54,7 +54,7 @@ function Tecnologias(){
                     <div>
                         <h1>Sass</h1>
                         <br/>
-                        <p>A sua ideia é adicionar recursos especiais como variáveis, mixins, funções e operações e outras opções variadas </p>
+                        <p>A sua ideia é adicionar recursos especiais como variáveis, mixins, funções e operações e outras opções variadas ao CSS</p>
                     </div>
                 </div>
             </section>
