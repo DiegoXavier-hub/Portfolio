@@ -1,22 +1,28 @@
 import React, {useState} from "react";
-import './Contato.css'
+import Modal from "../Modal/Modal"
+import "./Contato.css"
+
+import "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+import "//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
 
 function Contato(){
     
-    if(localStorage.getItem('isModalOpen') === undefined || localStorage.getItem('isModalOpen') === null) {
-        localStorage.setItem('isModalOpen', "false");
+    if(localStorage.getItem("isModalOpen") === undefined || localStorage.getItem("isModalOpen") === null) {
+        localStorage.setItem("isModalOpen", "false");
     }
 
-    const [nome, setNome] = useState('');
-    const [email, setEmail] = useState('');
-    const [telefone, setTelefone] = useState('');
-    const [mensagem, setMensagem] = useState('');
-    const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
-    const [isModalOpen, setIsModalOpen] = useState(localStorage.getItem('isModalOpen'));
-    const [imge, setIMGE] = useState('https://cdn-icons-png.flaticon.com/512/2950/2950315.png');
-    const [tittle, setTittle] = useState('Sucesso!');
-    const [description, setDescription] = useState('Recebi sua mensagem, entrarei em contato logo logo...');
+    const [nome, setNome] = useState("");
+    const [email, setEmail] = useState("");
+    const [telefone, setTelefone] = useState("");
+    const [mensagem, setMensagem] = useState("");
+    const emailRegex = /^[a-zA-Z0-9.!#$%&"*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
+
+    const [isModalOpen, setIsModalOpen] = useState(localStorage.getItem("isModalOpen"));
+    const [imge, setIMGE] = useState("https://cdn-icons-png.flaticon.com/512/2950/2950315.png");
+    const [tittle, setTittle] = useState("Sucesso!");
+    const [description, setDescription] = useState("Recebi sua mensagem, entrarei em contato logo logo...");
     
+
     function validarForm(){
         let valid = true
         if (nome.length<=2){
@@ -48,14 +54,20 @@ function Contato(){
 
     function enviarEmail() {
         if(validarForm()){
-            document.getElementById("form").submit()
-            localStorage.setItem('isModalOpen', "true")
-            setIsModalOpen("true")
+            try {
+                document.getElementById("form").submit()
+                localStorage.setItem("isModalOpen", "true")
+                setIsModalOpen("true")
+            } catch (error) {
+                console.log(error)
+                setIMGE("https://cdn-icons-png.flaticon.com/512/5512/5512315.png")
+            }
         }
     }
 
     return(
         <section id="Contato">
+            
             <section id="formulario">
                 <form action="https://api.staticforms.xyz/submit" method="POST" id="form">
                     <input type="hidden" name="accessKey" value="7e16d549-3c0f-41f8-acb1-797c7faa94eb"/>
@@ -93,20 +105,7 @@ function Contato(){
             </section>
 
             {isModalOpen === "true" ? 
-                <>
-                    <section id="modal" onClick={
-                        ()=>{
-                            setIsModalOpen("false")
-                            localStorage.setItem('isModalOpen', "false")
-                        }
-                        }>
-                        <div id="dialog">
-                            <img src={imge} alt="Imagem: Um coração dentro de uma carta"/>
-                            <h1>{tittle}</h1>
-                            <p>{description}</p>
-                        </div>
-                    </section>
-                </>
+                <Modal func={setIsModalOpen} img={imge} tittle={tittle} description={description} />
             : null}
         </section>
     )

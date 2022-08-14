@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from "react";
-import './Trabalhos.css'
+import "./Trabalhos.css"
 
 function Trabalhos(){
 
     const [trabalhos, setTrabalhos] = useState()
 
     useEffect(() =>{
-        setTrabalhos(document.getElementById('Trabalhos'))
+        setTrabalhos(document.getElementById("Trabalhos"))
     }, [])
 
     function backgroundAnim(param) {
