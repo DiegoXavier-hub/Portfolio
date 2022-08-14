@@ -3,8 +3,8 @@ import './Contato.css'
 
 function Contato(){
     
-    if(localStorage.getItem('isModalOpen') === undefined || localStorage.getItem('isModalOpen') === undefined) {
-        localStorage.setItem('isModalOpen', "true");
+    if(localStorage.getItem('isModalOpen') === undefined || localStorage.getItem('isModalOpen') === null) {
+        localStorage.setItem('isModalOpen', "false");
     }
 
     const [nome, setNome] = useState('');
