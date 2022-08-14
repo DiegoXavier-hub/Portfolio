@@ -2,9 +2,6 @@ import React, {useState} from "react";
 import Modal from "../Modal/Modal"
 import "./Contato.css"
 
-import "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
-import "//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
-
 function Contato(){
     
     if(localStorage.getItem("isModalOpen") === undefined || localStorage.getItem("isModalOpen") === null) {
