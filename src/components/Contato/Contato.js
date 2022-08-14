@@ -94,7 +94,12 @@ function Contato(){
 
             {isModalOpen === "true" ? 
                 <>
-                    <section id="modal" onClick={()=>setIsModalOpen("false")}>
+                    <section id="modal" onClick={
+                        ()=>{
+                            setIsModalOpen("false")
+                            localStorage.setItem('isModalOpen', "false")
+                        }
+                        }>
                         <div id="dialog">
                             <img src={imge} alt="Imagem: Um coração dentro de uma carta"/>
                             <h1>{tittle}</h1>
