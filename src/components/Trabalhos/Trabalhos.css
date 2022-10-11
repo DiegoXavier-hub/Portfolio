@@ -68,3 +68,19 @@
 .b6{
     background: url("../../images/tech-6-min.jpg") #1d1d1d !important;
 }
+
+@media screen and (max-width: 750px){
+    #Trabalhos div{
+        flex-direction: column;
+    }
+
+    #Trabalhos .work{
+        width: 100%;
+        height: 100%;
+    }
+
+    #Trabalhos .work:hover{
+        width: 100%;
+        height: 200%;
+    }
+}

@@ -130,3 +130,89 @@ h1{
         transform: scale(1)
     }
 }
+
+@media screen and (max-width: 1000px){
+    #Tecnologias .Tech{
+        margin-top: 80px;
+        height: 300px;
+        width: 180px;
+        font-size: 1.3rem;
+    }
+
+    #Tecnologias h1{
+        font-size: 2.3rem;
+    }
+
+    svg{
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    #Tecnologias section:nth-child(1){
+        margin-right: 50px;
+        margin-top: 150px;
+    }
+
+    #Tecnologias .Tech{
+        margin-top: 80px;
+        height: 280px;
+        width: 160px;
+        font-size: 1.1rem;
+    }
+
+    #Tecnologias h1{
+        font-size: 2.1rem;
+    }
+
+    #Tecnologias .Tech:hover svg{
+        margin-left: 0%;
+    }
+
+    #Tecnologias section:nth-child(1) .Tech:nth-child(1):hover svg{
+        margin-left: 0%;
+    }
+    #Tecnologias section:nth-child(1) .Tech:nth-child(2):hover svg{
+        margin-left: 0%;
+    }
+    #Tecnologias section:nth-child(1) .Tech:nth-child(3):hover img{
+        left: -195px;
+    }
+
+    #Tecnologias section:nth-child(2) .Tech:nth-child(1):hover svg{
+        margin-left: 0%;
+    }
+    #Tecnologias section:nth-child(2) .Tech:nth-child(2):hover svg{
+        margin-left: 0%;
+    }
+    #Tecnologias section:nth-child(2) .Tech:nth-child(3):hover svg{
+        margin-left: 0%;
+    }
+
+    svg{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    #Tecnologias .Tech{
+        margin-top: 80px;
+        height: 260px;
+        width: 140px;
+        font-size: 1rem;
+    }
+
+    #Tecnologias h1{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    #Tecnologias section:nth-child(1){
+        margin-right: 30px;
+        margin-top: 150px;
+    }
+}

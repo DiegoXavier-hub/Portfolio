@@ -114,3 +114,21 @@ header{
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 1000px){
+    .menu ul li a{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 810px){
+    .menu ul li a{
+        font-size: 1.34rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        display: none;
+    }
+}

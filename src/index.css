@@ -92,3 +92,9 @@ body{
         left: -110%;
     }
 }
+
+@media screen and (max-width: 768px){
+    #container{
+        padding-left: 0px;
+    }
+}
