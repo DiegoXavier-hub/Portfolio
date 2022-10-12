@@ -77,7 +77,7 @@
     }
 
     #Home h1{
-        font-size: 5.5rem;
+        font-size: 5.7rem;
     }
 
     #Home p{
@@ -97,7 +97,7 @@
     }
 
     #Home h1{
-        font-size: 5rem;
+        font-size: 5.2rem;
     }
 
     #Home p{
@@ -118,7 +118,7 @@
     }
 
     #Home h1{
-        font-size: 4rem;
+        font-size: 4.2rem;
         text-shadow: -3px 0px #ff0043;
     }
 
@@ -135,10 +135,11 @@
 @media screen and (max-width: 460px){
     #Home .code-tags{
         font-size: 1.4rem;
+        margin: -10% 0 -10% 0;
     }
 
     #Home h1{
-        font-size: 3.5rem;
+        font-size: 3.7rem;
         text-shadow: -3px 0px #ff0043;
     }
     #Home p{
@@ -159,7 +160,7 @@
     }
 
     #Home h1{
-        font-size: 3rem;
+        font-size: 3.2rem;
         text-shadow: -3px 0px #ff0043;
     }
     #Home p{
